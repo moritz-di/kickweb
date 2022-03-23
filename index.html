@@ -11,10 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-  <script src=“https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js”></script>
-  <script src=“https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js”></script>
-  <script src="main.js"></script>
-  
 </head>
 <body>
 
@@ -23,9 +19,9 @@
       <img src="assets/top-tape-vis.png" alt="comfortably numb">
     </div>
     <div class="lyrics">
-      <span>hello</span>
-      <span>hello</span>
-      <span>hello</span>
+      <span class="one">hello</span>
+      <span class="two">hello</span>
+      <span class="three">hello</span>
     </div>
   </section>
 
@@ -37,7 +33,7 @@
       <span>is there anybody - is there anybody</span>
     </div>
     <div class="lyrics">
-      <span>in there?</span>
+      <span class="move-up">in there?</span>
     </div>
   </section>
 
@@ -49,7 +45,9 @@
 
   <section id="delta">
     <div class="visual">
-      <img src="assets/anyone-vis.png" alt="anyone">
+      <div class="vis-clip">
+        <img src="assets/anyone-vis.png" alt="anyone">
+      </div>
     </div>
     <div class="lyrics">
       <span>is there anyone</span>
@@ -63,6 +61,11 @@
       <span class="home">home</span>
     </div>
   </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
 
 </body>
 </html>
