@@ -100,15 +100,6 @@ gsap.to("#zeta .come-on-container .two", {y: 70, scale: 0.8, scrollTrigger: {
 }});
 
 gsap.set("#zeta .come-on-container .three", {y: 0}),
-gsap.to("#zeta .come-on-container .three", {y: 70, scale: 0.8, scrollTrigger: {
-      trigger: "#zeta .come-on-container",
-      start: "top 70%",
-      end: "+=200",
-      //markers: true,
-      scrub: .5
-}});
-
-gsap.set("#zeta .come-on-container .three", {y: 0}),
 gsap.to("#zeta .come-on-container .three", {y: 130, scale: 0.6, scrollTrigger: {
       trigger: "#zeta .come-on-container",
       start: "top 70%",
@@ -169,7 +160,7 @@ gsap.to(".text-on-path", {attr:{startOffset: -9000}, scrollTrigger: {
       trigger: "#theta",
       start: "top top",
       end: "+=2000",
-      markers: true,
+      //markers: true,
       scrub: .5,
       pin: true
 }});

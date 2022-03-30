@@ -272,4 +272,16 @@ section#theta .text-path{
 section#lota{
   height: 50vh;
   background: var(--pink);
+  justify-content: flex-end;
+}
+
+section#lota span{
+  font-size: .2rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+section#lota img{
+  height: 25vh;
+  width: auto;
 }
