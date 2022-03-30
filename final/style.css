@@ -21,7 +21,7 @@ html, body{
 }
 
 section{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -231,16 +231,17 @@ section#eta span.down{
 }
 
 section#eta .vis-clip{
-  position: relative;
+  display: flex;
   align-self: flex-start;  
   overflow: hidden;
-  display: inline-block;
   height: 60vh;
   width: 40vw;
 }
 
 section#eta img{
-  width: 100%;
+  object-fit: cover;
+  object-position: right;
+  min-width: 100%;
 }
 
 /* ============================================== */
@@ -295,6 +296,71 @@ section#lota img{
   body{
     max-width: 2000px;
     margin: 0 auto;
+  }
+}
+
+/* ============================================== */
+/*                  S-SCREENS
+/* ============================================== */
+
+
+@media only screen and (max-width: 1000px) {
+  html{
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  html{
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html{
+    font-size: 20px;
+  }
+
+  /* alpha */
+  section#alpha .lyrics span:first-child{
+    font-size: 4rem;
+  }
+
+  section#alpha .lyrics span:nth-child(2){
+    font-size: 3rem;
+  }
+
+  section#alpha .lyrics span:nth-child(3){
+    font-size: 2rem;
+  }
+
+  /* beta */
+  section#beta img{
+    width: 80vw;
+  }
+
+  /* epsilon */
+  section#epsilon .visual .questionmark{
+    font-size: 1.5rem;
+  }
+  section#epsilon .visual .home{
+    font-size: .5rem;
+  }
+
+  /* zeta */
+  section#zeta .come-on-container span{
+    font-size: 3rem;
+    line-height: .8;
+  }
+
+  /* theta */
+  section#theta .text-on-path{
+    font-size: 20rem;
+  }
+
+  /* lota */
+  section#lota span{
+    font-size: .8rem;
   }
 }
 

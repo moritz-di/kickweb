@@ -34,16 +34,16 @@ gsap.to("#alpha .lyrics .three", {y: 0, opacity: 1, scrollTrigger: {
 gsap.to(".topdown span", {y: -750, scrollTrigger: {
       trigger: ".topdown",
       start: "top 50%",
-      end: "+=500",
+      end: "+=800",
       //markers:true,
       scrub: .5
 }});
 
 // beta -> in there
-gsap.set("#beta .lyrics .move-up", {y: 200}),
-gsap.to("#beta .lyrics .move-up", {y: 0, scrollTrigger: {
+gsap.set("#beta .lyrics .move-up", {y: "100%"}),
+gsap.to("#beta .lyrics .move-up", {y: "0", scrollTrigger: {
       trigger: ".move-up",
-      start: "top bottom",
+      start: "center 95%",
       end: "+=200",
       //markers:true,
       scrub: .5
