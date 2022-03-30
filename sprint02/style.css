@@ -211,6 +211,7 @@ section#zeta>span{
 section#eta{
   flex-direction: row;
   align-items: flex-end;
+  padding-bottom: 20vw;
 }
 
 section#eta .wrapper{
@@ -245,7 +246,30 @@ section#eta img{
 /*                      THETA
 /* ============================================== */
 
-
 section#theta{
+  background: var(--pink);
+  color: black;
+}
+
+section#theta svg{
+  padding-top: 10vh;
+}
+
+section#theta .text-on-path{
+  fill: black;
+  font-size: 5rem;
+}
+
+section#theta .text-path{
+  stroke: none;
+  fill: none;
+}
+
+/* ============================================== */
+/*                      LOTA
+/* ============================================== */
+
+section#lota{
+  height: 50vh;
   background: var(--pink);
 }

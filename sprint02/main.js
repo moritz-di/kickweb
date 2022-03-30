@@ -156,3 +156,20 @@ gsap.to("#eta .down", {opacity: 1, scrollTrigger: {
       //markers: true,
       scrub: .5
 }});
+
+
+// theta -> I have become
+gsap.set("#text-one", {attr:{startOffset: 0}});
+gsap.set("#text-two", {attr:{startOffset: 300}});
+gsap.set("#text-three", {attr:{startOffset: 600}});
+gsap.set("#text-four", {attr:{startOffset: 900}});
+gsap.set("#text-five", {attr:{startOffset: 1200}});
+
+gsap.to(".text-on-path", {attr:{startOffset: -9000}, scrollTrigger: {
+      trigger: "#theta",
+      start: "top top",
+      end: "+=2000",
+      markers: true,
+      scrub: .5,
+      pin: true
+}});
