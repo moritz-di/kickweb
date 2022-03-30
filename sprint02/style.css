@@ -177,16 +177,16 @@ section#epsilon .visual .home{
 /*                      ZETA
 /* ============================================== */
 
-#zeta{
+section#zeta{
   justify-content: flex-start;
 }
 
-#zeta .come-on-container{
+section#zeta .come-on-container{
   position: relative;
   margin-top: 10vh;
 }
 
-#zeta .come-on-container span{
+section#zeta .come-on-container span{
   font-size: 1rem;
   color: black;
   -webkit-text-stroke: 2px var(--pink);
@@ -197,10 +197,55 @@ section#epsilon .visual .home{
   white-space: nowrap;
 }
 
-#zeta>span{
+section#zeta>span{
   position: absolute;
   bottom: 0;
   font-size: 10rem;
   line-height: 0.6;
 }
 
+/* ============================================== */
+/*                      ETA
+/* ============================================== */
+
+section#eta{
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+section#eta .wrapper{
+  display: flex;
+  align-items: flex-end;
+  height: 60vh;
+}
+
+section#eta span.feeling{
+  align-self: flex-start;
+  margin-top: -2vh;
+}
+
+section#eta span.down{
+  line-height: .8;
+}
+
+section#eta .vis-clip{
+  position: relative;
+  align-self: flex-start;  
+  overflow: hidden;
+  display: inline-block;
+  height: 60vh;
+  width: 40vw;
+}
+
+section#eta img{
+  width: 100%;
+}
+
+/* ============================================== */
+/*                      THETA
+/* ============================================== */
+
+
+section#theta{
+  background: var(--pink);
+}

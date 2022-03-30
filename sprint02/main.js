@@ -117,12 +117,42 @@ gsap.to("#zeta .come-on-container .three", {y: 130, scale: 0.6, scrollTrigger: {
       scrub: .5
 }});
 
+// zeta -> now
 gsap.set("#zeta .now", {y: "100%"}),
 gsap.to("#zeta .now", {y: "10%", scrollTrigger: {
       trigger: "#zeta .now",
       start: "-80% bottom",
       end: "+=500",
-      markers: true,
+      //markers: true,
       scrub: .5
 }});
 
+// eta -> I hear you're feeling
+gsap.set("#eta .feeling", {opacity: 0}),
+gsap.to("#eta .feeling", {opacity: 1, scrollTrigger: {
+      trigger: "#eta .feeling",
+      start: "bottom bottom",
+      end: "+=100",
+      //markers: true,
+      scrub: .5
+}});
+
+// eta -> img (hand)
+gsap.set("#eta .vis-clip", {height: 0}),
+gsap.to("#eta .vis-clip", {height: "60vh", scrollTrigger: {
+      trigger: "#eta .vis-clip",
+      start: "bottom center",
+      end: "+=500",
+      //markers: true,
+      scrub: .5
+}});
+
+// eta -> down
+gsap.set("#eta .down", {opacity: 0}),
+gsap.to("#eta .down", {opacity: 1, scrollTrigger: {
+      trigger: "#eta .down",
+      start: "bottom 70%",
+      end: "+=100",
+      //markers: true,
+      scrub: .5
+}});
