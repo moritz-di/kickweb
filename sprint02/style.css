@@ -201,6 +201,6 @@ section#epsilon .visual .home{
   position: absolute;
   bottom: 0;
   font-size: 10rem;
-  transform: translateY(100%);
+  line-height: 0.6;
 }
 

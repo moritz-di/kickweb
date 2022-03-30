@@ -89,12 +89,40 @@ gsap.to("#epsilon .visual", {opacity: 1, y: 0, scrollTrigger: {
       scrub: .5
 }});
 
-// zeta -> visual (home)
-gsap.set("#zeta .come-on-container .one", {y: 0}),
-gsap.to("#zeta .come-on-container .one", {y: 100, scrollTrigger: {
-      trigger: "#epsilon .visual",
+// zeta -> come on
+gsap.set("#zeta .come-on-container .two", {y: 0}),
+gsap.to("#zeta .come-on-container .two", {y: 70, scale: 0.8, scrollTrigger: {
+      trigger: "#zeta .come-on-container",
       start: "top 70%",
-      end: "+=100",
+      end: "+=200",
+      //markers: true,
+      scrub: .5
+}});
+
+gsap.set("#zeta .come-on-container .three", {y: 0}),
+gsap.to("#zeta .come-on-container .three", {y: 70, scale: 0.8, scrollTrigger: {
+      trigger: "#zeta .come-on-container",
+      start: "top 70%",
+      end: "+=200",
+      //markers: true,
+      scrub: .5
+}});
+
+gsap.set("#zeta .come-on-container .three", {y: 0}),
+gsap.to("#zeta .come-on-container .three", {y: 130, scale: 0.6, scrollTrigger: {
+      trigger: "#zeta .come-on-container",
+      start: "top 70%",
+      end: "+=200",
+      //markers: true,
+      scrub: .5
+}});
+
+gsap.set("#zeta .now", {y: "100%"}),
+gsap.to("#zeta .now", {y: "10%", scrollTrigger: {
+      trigger: "#zeta .now",
+      start: "-80% bottom",
+      end: "+=500",
       markers: true,
       scrub: .5
 }});
+
